@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURA | Digital Creative & High-Performance Web Studio</title>
+    <title>AURA | Premium Web Design & Digital Production Studio</title>
     
-    <!-- Premium Geometric Typography -->
+    <!-- Premium Technical Typography -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* System Reset & Core Framework */
+        /* System Reset & Variable Framework */
         * {
             margin: 0;
             padding: 0;
@@ -20,20 +20,21 @@
         }
 
         :root {
-            /* True Premium Dark Mode Grid - Eliminating Blank White Screens completely */
-            --bg-deep: #050505;          /* Absolute cinematic black */
-            --bg-surface: #0d0d0f;       /* Deep obsidian surface panels */
-            --bg-card: #121215;          /* Sleek midnight charcoal for cards */
-            --text-main: #f5f5f7;        /* Clean metallic off-white */
-            --text-muted: #86868b;       /* Muted technical silver */
-            --accent-glow: #3a5bfd;      /* Electric digital blue */
-            --accent-glow-rgb: 58, 91, 253;
-            --border-thin: rgba(255, 255, 255, 0.06);
-            --border-bright: rgba(255, 255, 255, 0.15);
+            /* HIGH CONTRAST WEB PLATFORM PALETTE */
+            /* This completely prevents blank white views or flat unreadable black views */
+            --bg-deep: #0a0a0c;          /* High-end cinematic midnight background */
+            --bg-surface: #121216;       /* Elevated charcoal panels for contrast contrast */
+            --bg-card: #181822;          /* Rich deep blue-grey for project cards */
+            --text-main: #ffffff;        /* Pure white high-visibility typography */
+            --text-muted: #94a3b8;       /* Clean readable slate gray for body copy */
+            --accent-glow: #3b82f6;      /* Vibrant neon digital blue */
+            --accent-glow-rgb: 59, 130, 246;
+            --border-thin: rgba(255, 255, 255, 0.08);
+            --border-bright: rgba(255, 255, 255, 0.2);
             
             --font-main: 'Plus Jakarta Sans', sans-serif;
             --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
-            --transition-speed: all 0.6s var(--ease-expo);
+            --transition-speed: all 0.5s var(--ease-expo);
         }
 
         html {
@@ -49,7 +50,7 @@
             background-color: var(--bg-deep);
         }
 
-        /* Layout Architecture Containers */
+        /* Layout Structure Containers */
         .container {
             max-width: 1440px;
             margin: 0 auto;
@@ -60,12 +61,12 @@
         @media (max-width: 576px) { .container { padding: 0 1.5rem; } }
 
         section {
-            padding: 12rem 0;
+            padding: 10rem 0;
             position: relative;
             background-color: var(--bg-deep);
         }
 
-        /* High-End Technical Labels & Headings */
+        /* High-Visibility Interface Labels & Headings */
         .section-tag {
             font-size: 0.75rem;
             text-transform: uppercase;
@@ -84,7 +85,7 @@
             height: 8px;
             background-color: var(--accent-glow);
             border-radius: 50%;
-            box-shadow: 0 0 10px var(--accent-glow);
+            box-shadow: 0 0 12px var(--accent-glow);
         }
 
         .section-title {
@@ -94,9 +95,10 @@
             letter-spacing: -0.03em;
             max-width: 800px;
             margin-bottom: 5rem;
+            color: var(--text-main);
         }
 
-        /* Premium Interface Interactive Buttons */
+        /* Premium Interface Action Buttons */
         .action-btn {
             display: inline-flex;
             align-items: center;
@@ -130,7 +132,7 @@
             background-color: var(--accent-glow);
             border-color: var(--accent-glow);
             transform: translateX(6px);
-            box-shadow: 0 0 20px rgba(58, 91, 253, 0.4);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
         }
 
         .action-btn svg {
@@ -138,10 +140,10 @@
             height: 16px;
             fill: none;
             stroke: var(--text-main);
-            stroke-width: 2;
+            stroke-width: 2.5;
         }
 
-        /* Floating Futuristic Navigation Menu */
+        /* Floating Architectural Navigation Bar */
         nav {
             position: fixed;
             top: 2rem;
@@ -150,7 +152,7 @@
             width: calc(100% - 10rem);
             max-width: 1300px;
             z-index: 1000;
-            background-color: rgba(13, 13, 15, 0.7);
+            background-color: rgba(18, 18, 22, 0.8);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
             border: 1px solid var(--border-thin);
@@ -160,9 +162,9 @@
 
         nav.nav-scrolled {
             top: 1rem;
-            background-color: rgba(5, 5, 5, 0.85);
-            border-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+            background-color: rgba(10, 10, 12, 0.95);
+            border-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
         }
 
         @media (max-width: 992px) { nav { width: calc(100% - 5rem); top: 1.5rem; } }
@@ -180,11 +182,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.02em;
-        }
-
-        .studio-logo a {
             color: var(--text-main);
-            text-decoration: none;
         }
 
         .studio-logo span {
@@ -228,18 +226,19 @@
         .launch-btn:hover {
             background-color: var(--accent-glow);
             color: var(--text-main);
-            box-shadow: 0 0 15px rgba(58, 91, 253, 0.4);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
             transform: translateY(-2px);
         }
 
-        /* High-Impact Immersive Hero Section */
+        /* High-Impact Immersive Hero Viewport */
         .hero-viewport {
             min-height: 100vh;
             display: flex;
             align-items: center;
             padding-top: 120px;
-            background: radial-gradient(circle at 85% 30%, rgba(58, 91, 253, 0.12), transparent 50%),
-                        radial-gradient(circle at 15% 70%, rgba(58, 91, 253, 0.05), transparent 45%);
+            /* High visibility color flares to map clear background depth coordinates */
+            background: radial-gradient(circle at 80% 35%, rgba(59, 130, 246, 0.15), transparent 45%),
+                        radial-gradient(circle at 15% 75%, rgba(59, 130, 246, 0.08), transparent 40%);
         }
 
         .hero-grid {
@@ -257,11 +256,12 @@
             line-height: 1.05;
             letter-spacing: -0.04em;
             margin-bottom: 2.5rem;
+            color: var(--text-main);
         }
 
         .hero-text h1 span {
             color: transparent;
-            -webkit-text-stroke: 1px var(--text-main);
+            -webkit-text-stroke: 1.5px var(--text-main);
         }
 
         .hero-text p {
@@ -273,7 +273,7 @@
             max-width: 620px;
         }
 
-        /* Floating Code & UI Dev Matrix Panel */
+        /* Interactive High-Visibility Dashboard Preview Panel */
         .hero-visual-frame {
             position: relative;
             width: 100%;
@@ -286,29 +286,22 @@
         @media (max-width: 992px) { .hero-visual-frame { display: none; } }
 
         .dev-grid-glow {
-            width: 90%;
-            height: 90%;
-            border: 1px solid rgba(255,255,255,0.03);
-            background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-            background-size: 40px 40px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(255,255,255,0.02);
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
             border-radius: 20px;
             position: absolute;
         }
 
         .ui-element-box {
-            width: 75%;
-            height: 55%;
-            background: linear-gradient(135deg, rgba(20,20,25,0.9), rgba(10,10,12,0.95));
+            width: 85%;
+            height: 60%;
+            background-color: var(--bg-surface);
             border: 1px solid var(--border-bright);
-            box-shadow: 0 40px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.1);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1);
             border-radius: 16px;
-            transform: translateY(-10px) rotate(-3deg);
+            transform: translateY(-5px) rotate(-2deg);
             transition: var(--transition-speed);
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .ui-element-box::before {
