@@ -14,7 +14,7 @@
         * {
             margin: 0;
             padding: 0;
-            box-box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         :root {
@@ -178,10 +178,22 @@
             font-weight: 400;
         }
 
+        /* Portfolio Categories Subheadings */
+        .category-title {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin: 4rem 0 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 4rem;
+            margin-bottom: 6rem;
         }
 
         @media (max-width: 768px) {
@@ -192,7 +204,6 @@
             text-decoration: none;
             color: inherit;
             display: block;
-            group: hover;
         }
 
         .project-image {
@@ -204,18 +215,21 @@
             position: relative;
         }
 
-        /* Placeholder graphic treatment to keep it elegant without external assets */
+        /* Geometric styling background lines to mimic premium wireframes */
         .project-image::before {
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(45deg, #111, #222);
+            background: linear-gradient(135deg, #161616 25%, transparent 25%) -50px 0,
+                        linear-gradient(225deg, #161616 25%, transparent 25%) -50px 0,
+                        linear-gradient(45deg, #111, #1d1d1d);
+            background-size: 100px 100px;
             transition: var(--transition);
         }
 
         .project-card:hover .project-image::before {
             transform: scale(1.03);
-            opacity: 0.8;
+            filter: brightness(1.2);
         }
 
         .project-card h3 {
@@ -277,7 +291,6 @@
             <div class="logo"><a href="#">AURA</a></div>
             <ul class="nav-links">
                 <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -303,6 +316,8 @@
                     <h2>Featured Editorial Layouts</h2>
                 </div>
                 
+                <!-- Category 1: Luxury & Commerce -->
+                <h3 class="category-title">Brand Experiences & E-Commerce</h3>
                 <div class="grid">
                     <!-- Project 1 -->
                     <a href="#" class="project-card">
@@ -314,30 +329,12 @@
                     <!-- Project 2 -->
                     <a href="#" class="project-card">
                         <div class="project-image"></div>
-                        <h3>Monolith Architecture</h3>
-                        <p>Minimal Portfolio / Interaction Layout</p>
+                        <h3>Vanguard Horology</h3>
+                        <p>High-End Watchmaking / Immersive Presentation Layout</p>
                     </a>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <!-- Footer / Contact Section -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-wrap">
-                <div class="footer-cta">
-                    <h2>Have a grand vision?<br>Let’s materialize it.</h2>
-                    <a href="mailto:studio@auradesign.com" class="btn">Get In Touch</a>
-                </div>
-                
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Aura Design Studio. All rights reserved.</p>
-                    <p>Designed with absolute discipline.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                <!-- Category 2: Architecture & Spaces -->
+                <h3 class="category-title">Architecture & Art Direction</h3>
+                <div class="grid">
+                    <!-- Project 3 -->
